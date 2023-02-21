@@ -1,6 +1,6 @@
 {
-  "name": "react-native-mobile-mini-app",
-  "version": "0.1.0",
+  "name": "serino-mobile-mapp-review-rating",
+  "version": "0.1.5",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -34,8 +34,8 @@
   ],
   "repository": "http://serino-gitlab.serino.com/Dev/mini-app/mobile_mini_app",
   "author": {
-    "name": "FirstName LastName",
-    "email": "mail@mail.com",
+    "name": "Manuel Garcia IV",
+    "email": "manuel.garcia@serino.com",
     "url": "http://serino-gitlab.serino.com/Dev/mini-app/mobile_mini_app"
   },
   "license": "MIT",
@@ -121,5 +121,11 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react-native-paper": "^5.2.0",
+    "react-native-ratings": "^8.1.0",
+    "srn-components-lib": "^1.1.16"
   }
 }

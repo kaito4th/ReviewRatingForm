@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "react-native-mobile-mini-app": ["./src/index"]
+      "serino-mobile-mapp-review-rating": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

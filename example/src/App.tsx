@@ -1,31 +1,28 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-mobile-mini-app';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
+import { RatingMAPP } from 'serino-mobile-mapp-review-rating';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
+  const response = {
+    id: 1,
+    productName: 'Kis Transparent Storage Box XS',
+  };
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View>
+        <RatingMAPP
+          dataIn={{ descriptionField: { showDescription: false } }}
+          dataLoad={response}
+          dataOut={value => console.log('app: ', value)}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
   },
 });
